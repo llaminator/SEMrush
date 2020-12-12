@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SEMrush Bank</title>
+</head>
+<body onload="retrieve_saved()">
+    <div class="main-block">
+        <form class="application-form">
+            <div class="labeled-input">
+                <label for="property_price">Стоимость недвижимости</label>
+                <input class="property_price-input" type="text" id="property_price" name="property_price"
+                       value="20 000 000" oninput="recalculate()"><br>
+            </div>
+            <div class="labeled-input">
+                <label for="first_installment">Первоначальный взнос</label>
+                <input class="first_installment-input" type="text" id="first_installment" name="first_installment"
+                       value="3 000 000" oninput="recalculate()"><br>
+            </div>
+
+            <div class="percent-box">
+                <button class="percent-cell inactive" type="button" id="10" value="10" onclick="setPercent(10)">10%</button>
+                <button class="percent-cell active" type="button" id="15" value="15" onclick="setPercent(15)">15%</button>
+                <button class="percent-cell inactive" type="button" id="20" value="20" onclick="setPercent(20)">20%</button>
+                <button class="percent-cell inactive" type="button" id="25" value="25" onclick="setPercent(25)">25%</button>
+                <button class="percent-cell inactive" type="button" id="30" value="30" onclick="setPercent(30)">30%</button>
+            </div>
+            <div class="labeled-input">
+                <label for="credit_span">Срок кредита</label>
+                <input type="text" id="credit_span" name="credit_span" value="10"
+                       oninput="recalculate()"><br>
+            </div>
+            <div class="labeled-input">
+                <label for="credit_percentage">Процентная ставка</label>
+                <input type="text" id="credit_percentage" name="credit_percentage" value="10"
+                       oninput="recalculate()"><br>
+            </div>
+        </form>
+        <div class="controls">
+            <button class="save-button" id="save" onclick="save()">Save</button>
+            <button class="clear-button" id="clear" onclick="clearInputs()">Clear</button>
+        </div>
+        <div class="credit-results">
+            <div class="monthly_payment" id="monthly_payment" value="0">0</div>
+            <div class="required_income" id="required_income" value="0">0</div>
+            <div class="overpayment" id="overpayment" value="0">0</div>
+            <div class="loan_body" id="loan_body" value="0">0</div>
+        </div>
+    </div>
+</body>
+<script src="src.js"></script>
+</html>

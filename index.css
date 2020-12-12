@@ -1,0 +1,83 @@
+.main-block {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.application-form {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.labeled-input {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: small;
+}
+
+.property_price-input {
+
+}
+
+.first_installment-input {
+
+}
+
+.percent-box {
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+.percent-cell {
+    margin: 1%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.inactive {
+    background-color: whitesmoke;
+}
+
+.active {
+    background-color: lightskyblue;
+}
+
+
+.controls {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+button {
+    border-radius: 5px;
+    width: 50%;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.save-button {
+    background-color: rgb(80,174,52);
+    border-style: none;
+    color: white;
+}
+
+.clear-button {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+.credit-results {
+
+    background: whitesmoke;
+
+}
